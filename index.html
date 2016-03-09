@@ -13,6 +13,14 @@
                 font-family: Roboto;
             }
             
+            p {
+                margin-bottom: 20px;
+            }
+
+            h1.title {
+                text-align: center;
+            }
+
             .header-item > h5 {
                 cursor: pointer;
             }
@@ -61,7 +69,7 @@
 
                     <div class="header-item">
                         <span class="icon">
-                            <i class="fa fa-twitter" onmouseover="showInfo('twitter'); " onmouseout="hideInfo(); "></i>
+                            <i href="http://twitter.com/connorbillen" class="fa fa-twitter" onmouseover="showInfo('twitter'); " onmouseout="hideInfo(); "></i>
                         </span>
                         <div class="notification is-info" id="twitter-notification">@connorbillen</div>
                     </div>
@@ -74,9 +82,41 @@
                     </div>
                 </div>
             </div>
-        
         </header>
-    
+
+        <section class="section">
+            <div class="container" id="about-me">
+                <h1 class="title">Hello,</h1>
+                <p>My name is Connor Billen, and I'm a full-stack web developer from Rochester, New York
+                   I'm currently pursuing my Bachelor's Degree in Computer Science at the Rochester Institute
+                   of Technology. Although my classes have allowed me to toy with everything from Java to C
+                   to Assembly to Scheme, the web fascinates me as a never-settled, constantly evolving and
+                   expanding world of new frameworks and libraries that can make development an absolute
+                   joy. If you're an employer, you can find my Work Experience, Projects, and Skills below; if
+                   you're looking for programming wisdom or humor, please feel free to check out my social media.</p>
+            </div>
+            
+            <div class="container" id="work-experience">
+                <h3 class="subtitle">Work Experience</h3>
+                <p>
+                    <h4>WEGMANS | Web Application Solutions Developer | Jun, 2015 - Jan, 2016</h4>
+                </p>
+            
+                <p>
+                    <h4>ROCHESTER INSTITUTE OF TECHNOLOGY | Web Application Developer | Mar, 2014 - Current</h4>
+                </p>
+            
+                <p>
+                    <h4>BLUEHOUSE GROUP | Web Development Intern | Jun, 2012 - Aug, 2012</h4>
+                </p>        
+            </div>
+        
+            <div class="container" id="projects">
+                <h3 class="subtitle">Projects</h3>
+                <p></p>
+            </div>
+        </section>
+
         <script type="text/javascript" src="static/js/main.js"></script>
     </body>
 </html>
