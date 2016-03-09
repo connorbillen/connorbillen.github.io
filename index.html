@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>connor billen</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img id="profile" src="https://placehold.it/100x100" alt="Placeholder Professional Image" />
-        <br>
-        <br>
-        <span id="name">Connor Billen</span>
-        <br>
-        <br>
-        <nav>
-            <a href="/">Captain's Log</a> &bull; 
-            <a href="/about.html">About Me</a> &bull; 
-            <a href="/resume.html">Resume</a> &bull; 
-            <a href="/projects.html">Projects</a>
-        </nav>
-    </header>
-
-    <hr>
-
-    <article>
-        <section>
-            <div class="title">Test Post #1</div>
-            <summary>
-                There's a lot of new-fangled elements and shit in HTML5. Let's play around with
-                those and see how many things we can break and make and not break and not make!
-            </summary>
-            <a href="/post1.html">Read More...</a>
-        </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Connor Billen -- Web Developer</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" type="text/css" href="static/css/bulma.min.css">
+    
+        <style type="text/css">
+            body {
+                font-family: Roboto;
+            }
+            
+            .header-item > h5 {
+                cursor: pointer;
+            }
         
-        <section>
-            <div class="title">Test Post #2</div>
-            <summary>
-                There's a lot of new-fangled elements and shit in HTML5. Let's play around with
-                those and see how many things we can break and make and not break and not make!
-            </summary>
-            <a href="/post1.html">Read More...</a>
-        </section>
+            .notification {
+                position: absolute;
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="header-item">
+                        <h3 class="title is-3">connor billen.</h3>
+                    </div>
 
-        <section>
-            <div class="title">Test Post #3</div>
-            <summary>
-                There's a lot of new-fangled elements and shit in HTML5. Let's play around with
-                those and see how many things we can break and make and not break and not make!
-            </summary>
-            <a href="/post1.html">Read More...</a>
-        </section>
-    </article>
+                    <div class="header-item" onclick="scrollTo('about me'); "> 
+                        <h5>about me</h5>
+                    </div>
 
-    <hr>
+                    <div class="header-item" onclick="scrollTo('work experience'); ">
+                        <h5>work experience</h5>
+                    </div>
 
-    <footer>
-        &copy; Connor Billen, 2015 
-    </footer>
+                    <div class="header-item" onclick="scrollTo('projects'); ">
+                        <h5>projects</h5>
+                    </div>
+                </div>
+            
+                <div class="header-right">
+                    <div class="header-item">
+                        <span class="icon">
+                            <i class="fa fa-github-alt" onmouseover="showInfo('github'); " onmouseout="hideInfo(); "></i>
+                        </span>
+                        <div class="notification is-info" id="github-notification">github.com/connorbillen</div>
+                    </div>
 
-    <script type="text/javascript" src="main.js"></script>
-</body>
+                    <div class="header-item">
+                        <span class="icon">
+                            <i class="fa fa-envelope" onmouseover="showInfo('email'); " onmouseout="hideInfo(); "></i>
+                        </span>
+                        <div class="notification is-info" id="email-notification">me@connorbillen.com</div>
+                    </div>
+
+                    <div class="header-item">
+                        <span class="icon">
+                            <i class="fa fa-twitter" onmouseover="showInfo('twitter'); " onmouseout="hideInfo(); "></i>
+                        </span>
+                        <div class="notification is-info" id="twitter-notification">@connorbillen</div>
+                    </div>
+                
+                    <div class="header-item">
+                        <span class="icon">
+                            <i class="fa fa-mobile" onmouseover="showInfo('mobile'); " onmouseout="hideInfo(); "></i>
+                        </span>
+                        <div class="notification is-info" id="mobile-notification">(802)&nbsp;343&nbsp;4883</div>
+                    </div>
+                </div>
+            </div>
+        
+        </header>
+    
+        <script type="text/javascript" src="static/js/main.js"></script>
+    </body>
 </html>
