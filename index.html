@@ -21,13 +21,25 @@
                 text-align: center;
             }
 
-            .header-item > h5 {
+            h5, h6 {
+                display: inline;
+            }
+
+            .header-item > h5, i {
                 cursor: pointer;
             }
         
+            .header-item > h3 {
+                cursor: default;
+            }
+
             .notification {
                 position: absolute;
                 visibility: hidden;
+            }
+
+            .header-item > h3:hover, .header-item > h5:hover, i:hover {
+                color: #42afe3;
             }
         </style>
     </head>
@@ -87,33 +99,41 @@
         <section class="section">
             <div class="container" id="about-me">
                 <h1 class="title">Hello,</h1>
-                <p>My name is Connor Billen, and I'm a full-stack web developer from Rochester, New York
+                <p>My name is Connor Billen, and I'm a full-stack web developer from Rochester, New York.
                    I'm currently pursuing my Bachelor's Degree in Computer Science at the Rochester Institute
                    of Technology. Although my classes have allowed me to toy with everything from Java to C
-                   to Assembly to Scheme, the web fascinates me as a never-settled, constantly evolving and
+                   to Assembly to Scheme, the web fascinates me as a never-settling, constantly evolving and
                    expanding world of new frameworks and libraries that can make development an absolute
                    joy. If you're an employer, you can find my Work Experience, Projects, and Skills below; if
                    you're looking for programming wisdom or humor, please feel free to check out my social media.</p>
             </div>
-            
+            <br> 
             <div class="container" id="work-experience">
-                <h3 class="subtitle">Work Experience</h3>
+                <h6 class="title is-6">WORK EXPERIENCE</h6>
                 <p>
-                    <h4>WEGMANS | Web Application Solutions Developer | Jun, 2015 - Jan, 2016</h4>
+                    <h5 class="subtitle is-5">EnerNOC</h5><h6 class="subsubtitle is-6"> | Software Engineering Intern | May, 2016 - Dec, 2016</h6>
+                <p>
+                    <h5 class="subtitle is-5">Wegmans</h5><h6 class="subsubtitle is-6"> | Web Application Solutions Developer | Jun, 2015 - Jan, 2016</h6>
                 </p>
             
                 <p>
-                    <h4>ROCHESTER INSTITUTE OF TECHNOLOGY | Web Application Developer | Mar, 2014 - Current</h4>
+                    <h5 class="subtitle is-5">Rochester Institute of Technology</h5><h6 class="subsubtitle is-6"> | Web Application Developer | Mar, 2014 - Current</h6>
                 </p>
             
                 <p>
-                    <h4>BLUEHOUSE GROUP | Web Development Intern | Jun, 2012 - Aug, 2012</h4>
+                    <h5 class="subtitle is-5">Bluehouse Group</h5><h6 class="subsubtitle is-6"> | Web Development Intern | Jun, 2012 - Aug, 2012</h6>
                 </p>        
             </div>
-        
+            <br> 
             <div class="container" id="projects">
-                <h3 class="subtitle">Projects</h3>
-                <p></p>
+                <h6 class="title is-6">PROJECTS</h6>
+                <p>
+                    <h5 class="subtitle is-5">Trident</h5><h6 class="subsubtitle is-6"> | Lead Developer | Dec, 2015 - Current</h6>
+                </p>
+
+                <p>
+                    <h5 class="subtitle is-5">ChromePGP</h5><h6 class="subsubtitle is-6"> | Lead Developer | Jun, 2015 - Jul, 2015</h6>
+                </p>
             </div>
         </section>
 
