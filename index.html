@@ -1,198 +1,223 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Connor Billen -- Web Developer</title>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" type="text/css" href="static/css/bulma.min.css">
-    
-        <style type="text/css">
-            body {
-                font-family: Roboto;
-            }
-            
-            p {
-                margin-bottom: 20px;
-            }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connor Billen -- Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="static/css/bulma.min.css">
 
-            h1.title {
-                text-align: center;
-            }
+  <style type="text/css">
+    body {
+      font-family: Roboto;
+    }
 
-            h5, h6 {
-                display: inline;
-            }
+    p {
+      margin-bottom: 20px;
+    }
 
-			h5 a {
-				color: #69707a;
-			}
+    h1.title {
+      text-align: center;
+    }
 
-			div.content {
-				margin-top: 5px;
-				color: #0f1215;
-			}
+    h5, h6 {
+      display: inline;
+    }
 
-            .header-item > h5, i {
-                cursor: pointer;
-            }
-        
-            .header-item > h3 {
-                cursor: default;
-            }
+    h5 a {
+      color: #69707a;
+    }
 
-            .notification {
-                position: absolute;
-                visibility: hidden;
-            }
+    div.content {
+      margin-top: 5px;
+      color: #0f1215;
+    }
 
-            .header-item > h3:hover, .header-item > h5:hover, i:hover, h5:hover a:hover {
-                color: #42afe3;
-				border-bottom: 0px;
-				text-decoration: none !important;
-            }
-        </style>
-    </head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <div class="header-left">
-                    <div class="header-item">
-                        <h3 class="title is-3">connor billen.</h3>
-                    </div>
+    .header-item > h5, i {
+      cursor: pointer;
+    }
 
-					<!--
-                    <div class="header-item" onclick="scrollTo('about me'); "> 
-                        <h5>about me</h5>
-                    </div>
+    .header-item > h3 {
+      cursor: default;
+    }
 
-                    <div class="header-item" onclick="scrollTo('work experience'); ">
-                        <h5>work experience</h5>
-                    </div>
+    .notification {
+      position: absolute;
+      visibility: hidden;
+    }
 
-                    <div class="header-item" onclick="scrollTo('projects'); ">
-                        <h5>projects</h5>
-                    </div>
+    .header-item > h3:hover, .header-item > h5:hover, i:hover, h5:hover a:hover {
+      color: #42afe3;
+      border-bottom: 0px;
+      text-decoration: none !important;
+    }
 
-					<div class="header-item" onclick="scrollTo('skills'); ">
-						<h5>skills</h5>
-					</div>
-					-->
-                </div>
-            
-                <div class="header-right">
-                    <div class="header-item">
-                        <span class="icon">
-                            <a href="https://github.com/connorbillen" target="_blank"><i class="fa fa-github-alt" onmouseover="showInfo('github'); " onmouseout="hideInfo(); "></i></a>
-                        </span>
-                        <div class="notification is-info" id="github-notification">github.com/connorbillen</div>
-                    </div>
+    div.skill {
+      margin: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-left">
+        <div class="header-item">
+          <h3 class="title is-3">connor billen.</h3>
+        </div>
 
-                    <div class="header-item">
-                        <span class="icon">
-                            <a href="mailto:me@connorbillen.com"<i class="fa fa-envelope" onmouseover="showInfo('email'); " onmouseout="hideInfo(); "></i></a>
-                        </span>
-                        <div class="notification is-info" id="email-notification">me@connorbillen.com</div>
-                    </div>
+        <!--
+        <div class="header-item" onclick="scrollTo('about me'); ">
+        <h5>about me</h5>
+      </div>
 
-                    <div class="header-item">
-                        <span class="icon">
-                            <a href="https://twitter.com/connorbillen" target="_blank"><i class="fa fa-twitter" onmouseover="showInfo('twitter'); " onmouseout="hideInfo(); "></i></a>
-                        </span>
-                        <div class="notification is-info" id="twitter-notification">@connorbillen</div>
-                    </div>
-                
-                    <div class="header-item">
-                        <span class="icon">
-                            <i class="fa fa-mobile" onmouseover="showInfo('mobile'); " onmouseout="hideInfo(); "></i>
-                        </span>
-                        <div class="notification is-info" id="mobile-notification">(802)&nbsp;343&nbsp;4883</div>
-                    </div>
-                </div>
+      <div class="header-item" onclick="scrollTo('work experience'); ">
+      <h5>work experience</h5>
+    </div>
+
+    <div class="header-item" onclick="scrollTo('projects'); ">
+    <h5>projects</h5>
+  </div>
+
+  <div class="header-item" onclick="scrollTo('skills'); ">
+  <h5>skills</h5>
+</div>
+-->
+</div>
+
+<div class="header-right">
+  <div class="header-item">
+    <span class="icon">
+      <a href="https://github.com/connorbillen" target="_blank"><i class="fa fa-github-alt" onmouseover="showInfo('github'); " onmouseout="hideInfo(); "></i></a>
+    </span>
+    <div class="notification is-info" id="github-notification">github.com/connorbillen</div>
+  </div>
+
+  <div class="header-item">
+    <span class="icon">
+      <a href="mailto:me@connorbillen.com"<i class="fa fa-envelope" onmouseover="showInfo('email'); " onmouseout="hideInfo(); "></i></a>
+    </span>
+    <div class="notification is-info" id="email-notification">me@connorbillen.com</div>
+  </div>
+
+  <div class="header-item">
+    <span class="icon">
+      <a href="https://twitter.com/connorbillen" target="_blank"><i class="fa fa-twitter" onmouseover="showInfo('twitter'); " onmouseout="hideInfo(); "></i></a>
+    </span>
+    <div class="notification is-info" id="twitter-notification">@connorbillen</div>
+  </div>
+
+  <div class="header-item">
+    <span class="icon">
+      <i class="fa fa-mobile" onmouseover="showInfo('mobile'); " onmouseout="hideInfo(); "></i>
+    </span>
+    <div class="notification is-info" id="mobile-notification">(802)&nbsp;343&nbsp;4883</div>
+  </div>
+</div>
+</div>
+</header>
+
+<section class="section">
+  <div class="container" id="about-me">
+    <h1 class="title">Hello,</h1>
+    <p>My name is Connor Billen, and I'm a full-stack web developer from Rochester, New York.
+      I'm currently pursuing my Bachelor's Degree in Computer Science at the Rochester Institute
+      of Technology. Although my classes have allowed me to toy with everything from Java to C
+      to Assembly to Scheme, the web fascinates me as a never-settling, constantly evolving and
+      expanding world of new frameworks and libraries that can make development an absolute
+      joy. If you're an employer or you're interested in any of the projects that I have worked on,
+      you can find my Work Experience, Projects, and Skills below.<p>
+      </div>
+      <br>
+      <div class="container" id="work-experience">
+        <h6 class="title is-6">WORK EXPERIENCE</h6>
+        <p>
+          <h5 class="subtitle is-5"><a href="https://enernoc.com" target="_blank">EnerNOC</a></h5><h6 class="subsubtitle is-6"> | Software Engineering Intern | May, 2016 - Dec, 2016</h6>
+          <div class="content">
+            <p>During the Summer and Fall terms, I will be working for EnerNOC as a Software Engineer.</p>
+          </div>
+          <p>
+            <h5 class="subtitle is-5"><a href="https://wegmans.com" target="_blank">Wegmans</a></h5><h6 class="subsubtitle is-6"> | Web Application Solutions Developer | Jun, 2015 - Jan, 2016</h6>
+            <div class="content">
+              <p>Responsibilities included: Leading development of several web applications, gathering requirements from internal business end users, provide support post application deployment.</p>
+              <ul>
+                <li>Worked with the Microsoft Sharepoint 2013, designing Display Templates, Page Layouts, Site Collections, and more</li>
+                <li>Developed full-stack Javascript web applications that integrated with the SharePoint services and API</li>
+              </ul>
             </div>
-        </header>
+          </p>
 
-        <section class="section">
-            <div class="container" id="about-me">
-                <h1 class="title">Hello,</h1>
-                <p>My name is Connor Billen, and I'm a full-stack web developer from Rochester, New York.
-                   I'm currently pursuing my Bachelor's Degree in Computer Science at the Rochester Institute
-                   of Technology. Although my classes have allowed me to toy with everything from Java to C
-                   to Assembly to Scheme, the web fascinates me as a never-settling, constantly evolving and
-                   expanding world of new frameworks and libraries that can make development an absolute
-                   joy. If you're an employer or you're interested in any of the projects that I have worked on, 
-				   you can find my Work Experience, Projects, and Skills below.<p>
+          <p>
+            <h5 class="subtitle is-5"><a href="https://rit.edu" target="_blank">Rochester Institute of Technology</a></h5><h6 class="subsubtitle is-6"> | Web Application Developer | Mar, 2014 - Current</h6>
+            <div class="content">
+              <p>Responsibilities included: Assisting in the design and development of internal web applications used for several business processes, and aiding in the expansion of the web applications to meet the needs and requirements of teams that desired the integration of the new tools in their own workflow.</p>
+
+              <ul>
+                <li>Assisted with design and development</li>
+                <li>Worked with an existing JS/PHP stack, using BackboneJS as our MV* framework</li>
+                <li>Expanded project to other teams after completion</li>
+              </ul>
             </div>
-            <br> 
-            <div class="container" id="work-experience">
-                <h6 class="title is-6">WORK EXPERIENCE</h6>
-                <p>
-                    <h5 class="subtitle is-5"><a href="https://enernoc.com" target="_blank">EnerNOC</a></h5><h6 class="subsubtitle is-6"> | Software Engineering Intern | May, 2016 - Dec, 2016</h6>
-                	<div class="content">
-						<p>During the Summer and Fall terms, I will be working for EnerNOC as a Software Engineer.</p>
-					</div>
-				<p>
-                    <h5 class="subtitle is-5"><a href="https://wegmans.com" target="_blank">Wegmans</a></h5><h6 class="subsubtitle is-6"> | Web Application Solutions Developer | Jun, 2015 - Jan, 2016</h6>
-					<div class="content">
-						<p>Responsibilities included: Leading development of several web applications, gathering requirements from internal business end users, provide support post application deployment.</p>
-						<ul>
-							<li>Worked with the Microsoft Sharepoint 2013, designing Display Templates, Page Layouts, Site Collections, and more</li>
-							<li>Developed full-stack Javascript web applications that integrated with the SharePoint services and API</li>
-						</ul>
-					</div>
-				</p>
-            
-                <p>
-                    <h5 class="subtitle is-5"><a href="https://rit.edu" target="_blank">Rochester Institute of Technology</a></h5><h6 class="subsubtitle is-6"> | Web Application Developer | Mar, 2014 - Current</h6>
-					<div class="content">
-						<p>Responsibilities included: Assisting in the design and development of internal web applications used for several business processes, and aiding in the expansion of the web applications to meet the needs and requirements of teams that desired the integration of the new tools in their own workflow.</p>
-						
-						<ul>
-							<li>Assisted with design and development</li>
-							<li>Worked with an existing JS/PHP stack, using BackboneJS as our MV* framework</li>
-							<li>Expanded project to other teams after completion</li>
-						</ul>
-					</div>
 
-                </p>
-            
-                <p>
-                    <h5 class="subtitle is-5"><a href="https://bluehousegroup.com" target="_blank">Bluehouse Group</a></h5><h6 class="subsubtitle is-6"> | Web Development Intern | Jun, 2012 - Aug, 2012</h6>
-					<div class="content">
-						<p>Worked on researching the capabilities of HTML5, the new canvas element, and its interaction with Javascript to test the feasibility of converting a client's Flash-based web application to a native solution for mobile device compatibility and an overall smoother end user experience.</p>
-						
-						<ul>
-							<li>Worked with pre-existing client's requirements and application</li>
-							<li>Responsible for documentation, development, and testing</li>
-						</ul>
-					</div>
+          </p>
 
-                </p>        
+          <p>
+            <h5 class="subtitle is-5"><a href="https://bluehousegroup.com" target="_blank">Bluehouse Group</a></h5><h6 class="subsubtitle is-6"> | Web Development Intern | Jun, 2012 - Aug, 2012</h6>
+            <div class="content">
+              <p>Worked on researching the capabilities of HTML5, the new canvas element, and its interaction with Javascript to test the feasibility of converting a client's Flash-based web application to a native solution for mobile device compatibility and an overall smoother end user experience.</p>
+
+              <ul>
+                <li>Worked with pre-existing client's requirements and application</li>
+                <li>Responsible for documentation, development, and testing</li>
+              </ul>
             </div>
-            <br> 
-            <div class="container" id="projects">
-                <h6 class="title is-6">PROJECTS</h6>
-                <p>
-                    <h5 class="subtitle is-5"><a href="https://github.com/connorbillen/Trident" target="_blank">Trident</a></h5><h6 class="subsubtitle is-6"> | Lead Developer | Dec, 2015 - Current</h6>
-					<div class="content">
-						<p>An open-source Packaged App for the Chrome browser and Chrome OS platforms which enables the management and utilization of PGP keys, providing an easy interface to create and decrypt PGP messages.</p>
-					</div>
-                </p>
 
-                <p>
-                    <h5 class="subtitle is-5"><a href="https://github.com/connorbillen/ChromePGP" target="_blank">ChromePGP</a></h5><h6 class="subsubtitle is-6"> | Lead Developer | Jun, 2015 - Jul, 2015</h6>
-                	<div class="content">
-						<p>An open-source application developed with NodeJS that aims to easily allow users to search for, acquire, and view media of all types through any source Provides a plug-and-play system for adding sources of media and how they should be interacted with, and aims to leverage all of HTML5's media elements, enabling the viewing of stored media on any platform.</p>
-					</div>
-				</p>
+          </p>
+        </div>
+        <br>
+        <div class="container" id="projects">
+          <h6 class="title is-6">PROJECTS</h6>
+          <p>
+            <h5 class="subtitle is-5"><a href="https://github.com/connorbillen/ChromePGP" target="_blank">ChromePGP</a></h5><h6 class="subsubtitle is-6"> | Lead Developer | Jun, 2015 - Jul, 2015</h6>
+            <div class="content">
+              <p>An open-source Packaged App for the Chrome browser and Chrome OS platforms which enables the management and utilization of PGP keys, providing an easy interface to create and decrypt PGP messages.</p>
             </div>
-			<br>
-			<div class="container" id="work-experience">
-                <h6 class="title is-6">SKILLS</h6>
-			</div>
-        </section>
+          </p>
 
-        <script type="text/javascript" src="static/js/main.js"></script>
+          <p>
+            <h5 class="subtitle is-5"><a href="https://github.com/connorbillen/Trident" target="_blank">Trident</a></h5><h6 class="subsubtitle is-6"> | Lead Developer | Dec, 2015 - Current</h6>
+            <div class="content">
+              <p>An open-source application developed with NodeJS that aims to easily allow users to search for, acquire, and view media of all types through any source Provides a plug-and-play system for adding sources of media and how they should be interacted with, and aims to leverage all of HTML5's media elements, enabling the viewing of stored media on any platform.</p>
+            </div>
+          </p>
+        </div>
+        <br>
+        <div class="container" id="work-experience">
+          <h6 class="title is-6">SKILLS</h6>
+
+          <div class="skills-container">
+            <div class="skill">Javascript</div>
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS</div>
+            <div class="skill">jQuery</div>
+            <div class="skill">NodeJS</div>
+            <div class="skill">BackboneJS</div>
+            <div class="skill">SocketIO</div>
+            <div class="skill">ExpressJS</div>
+            <div class="skill">Mongoose</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Bulma</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">Python</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Unix</div>
+            <div class="skill">Git</div>
+            <div class="skill">Bash</div>
+          </div>
+        </div>
+      </section>
+
+      <script type="text/javascript" src="static/js/main.js"></script>
     </body>
-</html>
+    </html>
