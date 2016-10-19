@@ -1,7 +1,7 @@
 var githubNotification      = document.getElementById('github-notification');
 var emailNotification       = document.getElementById('email-notification');
 var twitterNotification     = document.getElementById('twitter-notification');
-var mobileNotification       = document.getElementById('mobile-notification');
+var mobileNotification      = document.getElementById('mobile-notification');
 
 function showInfo(type) {
     if (type === 'github')
