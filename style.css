@@ -16,6 +16,8 @@ div.fullname {
 
 div.subheader {
     margin: 40px 0px 20px 0px;
+    max-width: 350px;
+    width: 30%;
 }
 
 div.container {
