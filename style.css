@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: "DIN Alternate";
+}
+
+i.social {
+    color: #000;
+    margin: 10px;
+    display: inline-block;
+}
+
+div.fullname {
+    font-size: xx-large;
+    margin: 50px 0px 0px 0px;
+}
+
+div.subheader {
+    margin: 40px 0px 20px 0px;
+}
+
+div.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
